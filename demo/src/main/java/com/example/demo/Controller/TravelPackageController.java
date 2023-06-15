@@ -1,8 +1,13 @@
-package com.example.demo;
+package com.example.demo.Controller;
 
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
+import com.example.demo.Entity.Activity;
+import com.example.demo.Entity.Passenger;
+import com.example.demo.Entity.TravelPackage;
+import com.example.demo.Service.TravelPackageService;
 
 @RestController
 @RequestMapping("/travel")
@@ -40,7 +45,7 @@ public class TravelPackageController {
     }
 
     @GetMapping("/activities/available")
-    public List <Activity> getAvailableActivities() {
+    public List<Activity> getAvailableActivities() {
         return travelPackageService.getAvailableActivities();
     }
 }

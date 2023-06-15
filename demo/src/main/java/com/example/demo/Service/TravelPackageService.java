@@ -1,12 +1,14 @@
-package com.example.demo;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+package com.example.demo.Service;
 
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.example.demo.Entity.Activity;
+import com.example.demo.Entity.Destination;
+import com.example.demo.Entity.Passenger;
+import com.example.demo.Entity.TravelPackage;
 
 @Service
 public class TravelPackageService {

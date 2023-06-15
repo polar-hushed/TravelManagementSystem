@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.Entity;
 public class Activity {
     private String name;
     private String description;
